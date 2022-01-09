@@ -1,6 +1,10 @@
 # Convert .svs to .dzi and publish as or embed in a web page 
+These are the codes we use to:
 - Convert .svs to .dzi and publish as or embed in a web page
 - Making a digital pathology archive
+- deeply inspired by:
+  - https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A6879101264504995841/?comme%5B%E2%80%A6%5DEcard%7Efeed-null-9d6747%7Ekxqtjk75%7Epp-null-voyagerOffline
+  - https://www.iis.fraunhofer.de/en/ff/sse/health/medical-image-analysis/mikroskopie/micaia.html
 
 ## install requirements
 
@@ -26,7 +30,7 @@ brew install openslide
 pip3 install openslide-python
 ```
 
-### download openseadragon
+### download `openseadragon`
 
 - https://openseadragon.github.io/
 
@@ -72,25 +76,20 @@ this runs a long time depending on file size
 
 - https://openseadragon.github.io/docs/
 
-
+- see `HE.html` 
 <summary>
-- see `HE.html`
+or minimum example in Details
 </summary>
 <details>
+
 ```html
 <meta charset="utf-8"/>
 <div id="openseadragon1" style="width: 100%; height: 95%;"></div>
 <script src="./openseadragon/openseadragon.min.js"></script>
-<script src="openseadragon/openseadragon-scalebar.js"></script> <!-- for scalebar -->
 <script type="text/javascript">
  var viewer = OpenSeadragon({
  id: 'openseadragon1',
  prefixUrl : './openseadragon/images/',
- showHomeControl : false, // optional
- showRotationControl : true,  // optional
- showNavigator : true,  // optional
- showFlipControl: true,  // optional
- navigatorBackground: 'rgb(240, 240, 240)',  // optional
  tileSources: {
  Image: {
 Url: './HE_files/', // name of image folder
@@ -104,22 +103,15 @@ Size: {
  Height: '30580' // see .dzi file
  } 
  }}});
-// for scalebar
-viewer.scalebar({ 
-minWidth: '100px', 
-pixelsPerMeter : '1.98255e+06', 
-fontFamily : 'Arial', 
-backgroundColor : 'rgba(255, 255, 255, 0.5)', 
-fontSize : 'small', 
-barThickness : '2', 
-xOffset : '10', 
-yOffset : '10'  
-});
 </script>
 ```
+
 </details>
 
 
+
+
+---
 
 ## further configurations
 
