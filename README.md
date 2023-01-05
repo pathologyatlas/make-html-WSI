@@ -117,11 +117,11 @@ Size: {
 
 ```markdown
 
-- [https://pathologyatlas.github.io/template/HE.html](https://pathologyatlas.github.io/template/HE.html)
+- [https://images.patolojiatlasi.com/template/HE.html](https://images.patolojiatlasi.com/template/HE.html)
 
 - See Microscopy with viewer: 
 
-<iframe src="https://pathologyatlas.github.io/template/HE.html" width="100%" height="400px"></iframe>
+<iframe src="https://images.patolojiatlasi.com/template/HE.html" width="100%" height="400px"></iframe>
 
 ```
 
